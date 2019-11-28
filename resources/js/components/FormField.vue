@@ -31,9 +31,9 @@ export default {
         tinymce_api_key() {
             return Nova.config.tinymce_api_key
         },
-        
+
         options() {
-            let options = this.field.options
+            let options = this.field.options;
 
             if (options.use_lfm) {
                 options['file_browser_callback'] = this.filemanager
